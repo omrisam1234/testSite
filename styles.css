@@ -1,53 +1,17 @@
+@font-face {
+    font-family: siteFont;
+    src: url(BrandaRegular.woff);
+}
+
 body{
     margin: 0;
+    background-color: lightblue;
 }
 
 .header{
-    
-    width: 100%;
-    background-color: lightcyan;
-    margin: 0;
-    padding: 15px;
+    background-color: aqua;
     text-align: center;
-}
-
-.button{
-
-    margin: 20px;
-    padding: 15px 64px;
-    background-color: greenyellow;
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-    transition: 0.1s;
-    border-radius: 10px;
-}
-
-.button:hover{
-    border-radius: 25px;
-    background-color: darkgreen;
-    color: black;
-}
-
-.container{
-    display: flex;
-    justify-content:flex-start;
-    height: 300px;
-    flex-wrap: wrap;
-    overflow: hidden;
-}
-
-
-.card{
-    background-color: gray;
-    font-size: 30px;
-    height: 100px;
-    margin: 5px;
-    padding: 10px;
-    width: 100px;
-}
-
-canvas{
-    max-width: 100%;
-    max-height: 50%;
+    font-size: 64px;
+    color: beige;
+    font-family: siteFont;
 }
