@@ -1,6 +1,7 @@
 @font-face {
     font-family: siteFont;
-    src: url(BrandaRegular.woff);
+    src: url(BrandaRegular.woff) format("woff"), 
+    url(BrandaRegular.woff2) format("woff2");
 }
 
 body{
