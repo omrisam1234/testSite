@@ -1,18 +1,172 @@
-@font-face {
-    font-family: siteFont;
-    src: url(BrandaRegular.woff) format("woff"), 
-    url(BrandaRegular.woff2) format("woff2");
+body{
+  margin: 0;
+  padding: 0;
+  background-color:#d3d3d3;
 }
 
-body{
-    margin: 0;
-    background-color: lightblue;
+.wrapper{
+  width:100%;
+  margin:0;
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  justify-items:center;
+  margin-top:20px;
+  margin-bottom:100px;
 }
 
 .header{
-    background-color: aqua;
-    text-align: center;
-    font-size: 64px;
-    color: beige;
-    font-family: siteFont;
+  margin-left:50px;
+
 }
+
+.header > h1{
+  font-size:3vw;
+  margin:0;
+}
+
+.header > p{
+  font-size:2em;
+  margin-top:0.4em;
+}
+
+
+
+.container{
+  display:flex;
+  flex-direction:column;
+  align-self:start;
+  width: 400px;
+  margin:0;
+  padding:0;
+  background-color:white;
+  border-radius:10px;
+
+}
+
+.newButton{
+  height:2em;
+  background-color:#9bc400;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:10px 10px 0px 0px;
+  padding:6px;
+  cursor:pointer;
+  transition:0.2s;
+  }
+
+.newButton > p{
+  color:white;
+  font-size:1.5em;
+  margin:0;
+  padding:0;
+  transition:0.2s;
+}
+
+.newButton:hover > p{
+  font-size:1.7em;
+}
+
+.newButton:hover{
+  background-color:green;
+}
+
+.template{
+  background-color:#d2f8d2;
+}
+
+.template>b,p:focus{
+  outline:none;
+}
+
+[contentEditable="true"]:empty:before{
+  content: attr(placeholder);
+  opacity:0.5;
+}
+
+.noteContainer{
+  display:flex;
+  flex-direction:column-reverse;
+}
+
+.note{
+  box-sizing:border-box;
+  font-size:18px;
+  width:100%;
+  padding:10px;
+  margin:0px;
+  display:flex;
+  flex-direction:column;
+  transition:0.3s;
+  transition: max-height 0.3s;
+  transition-timing-function: ease-in-out;
+  max-height:500px;
+  overflow:hidden;
+  
+  
+}
+
+.hidden{
+  max-height:0px;
+  overflow:hidden;
+}
+
+.note:hover{
+  background-color:#90ee90;
+  transform: scale(1.1);
+  border-radius:20px;
+}
+
+
+
+
+
+.note > .title{
+  font-size:1.5em;
+  margin:0;
+  margin-bottom:5px;
+  word-wrap:break-word;
+  display:flex;
+  justify-content:space-between;
+}
+
+.note > .content{
+  margin:0;
+  font-size:1.2em;
+  margin-bottom:5px;
+  word-wrap:break-word;
+  display:flex;
+  flex-direction:row;
+}
+
+.note > .date{
+  font-size:1em;
+  margin:0;
+  color:gray;
+  align-self:flex-end;
+  
+}
+
+.delete{
+  background-color:rgba(220,220,220,0.6);
+  color:rgba(192,192,192,0.6);
+  font-size:1em;
+  width:1em;
+  height:1em;
+  line-height:1em;
+  border-radius:50%;
+  
+  text-align:center;
+  padding:0;
+  margin:0;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.delete:hover{
+  background-color:rgba(250,0,0,0.4);
+  color:darkred;
+  transform: scale(1.2);
+}
+
+v

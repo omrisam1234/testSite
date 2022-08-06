@@ -6,8 +6,38 @@
     </head>
 
     <body>
-        <h1 class="header">My To-Do List</h1>
+        <div class="wrapper">
+  <div class="header">
+    <h1>Write your note here...</h1>
+    <p>This Website is designed to help you with note taking and also maybe some other things in the future</p>
+  </div>
+  <div class="container">
+    
+    <div class="newButton" id="addNoteButton">
+      <p>Add new</p>
+    </div>
+    <div class="note template" id="noteTemplate">
+      <b class="title" placeholder="New note title" contentEditable="true"></b>
+      <p class="content" placeholder="Add extra info" contentEditable="true"></p>
+      </div>
+    <div class="noteContainer" id="container">
+      
+      <div class="note">
+      <b class="title">
+        <div class="title">first note</div>
+        <div class="delete">X</div>
+        </b>
+        <p class="content">Whenx a random word or a random sentence isn't quite enough</p>
+      <p class="date">august 4th 2022</p>
+      </div>
+      
+      
+    </div>
+    
+  </div>
 
-        <script src="basics.js"></script>
+</div>
+      <script src="basics.js"></script>
+
     </body>
 </html>
